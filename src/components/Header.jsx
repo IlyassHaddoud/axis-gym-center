@@ -7,6 +7,7 @@ const Header = () => {
   const toggleNav = () => {
     nav.current.classList.toggle("active");
     burger.current.classList.toggle("active");
+    document.body.classList.toggle("active");
   };
   return (
     <div className="header">

@@ -9,6 +9,12 @@
 
 body {
   background-color: black;
+  position: relative;
+  height: 100vh;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 .app {
@@ -87,7 +93,7 @@ body {
 }
 
 .header .nav.active {
-  display: flex;
+  transform: translateX(0%);
 }
 
 .header .burger.active {
@@ -192,7 +198,6 @@ body {
 
 .explore .program {
   z-index: -1;
-  height: 20%;
   max-width: 90%;
   position: absolute;
 }
@@ -226,6 +231,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  html,
   body {
     overflow-x: hidden;
   }
@@ -239,7 +245,8 @@ body {
     width: 100%;
     flex-direction: column;
     right: 0px;
-    display: none;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
     z-index: 100;
   }
   .header .nav .nav-links {
