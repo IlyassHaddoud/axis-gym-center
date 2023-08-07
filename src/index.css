@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.app {
+  max-width: 75rem;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+.header .logo {
+  flex: 1;
+}
+
+.header .nav {
+  display: flex;
+  flex: 3;
+  align-items: center;
+}
+
+.header .nav .nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex: 2;
+}
+
+.header .nav .nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .nav .nav-buttons {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.header .nav .nav-buttons button {
+  width: 80px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header .nav .nav-buttons .login {
+  background-color: black;
+  border: solid 1px white;
+}
+
+.header .nav .nav-buttons .register {
+  background-color: #097fd9;
+}
+
+.header .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.header .burger .line {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin-block: 7px;
+  transition: transform 0.5s ease;
+}
+
+.header .nav.active {
+  display: flex;
+}
+
+.header .burger.active {
+  .line:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 6px);
+  }
+  .line:nth-child(2) {
+    opacity: 0;
+  }
+  .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+.hero {
+  display: flex;
+  max-width: 100%;
+  padding-block: 30px;
+}
+
+.hero .content {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-block: 8%;
+  color: white;
+}
+
+.hero .content h1 {
+  font-size: clamp(2.5rem, 3vw + 1rem, 5rem);
+}
+
+.hero .content .btns {
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .content .btns button {
+  background-color: #097fd9;
+  width: 40%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero .content .btns .btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero .content .btns .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero .frame {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .frame .fitness {
+  position: absolute;
+  height: 90%;
+}
+
+.hero .frame .front-image {
+  position: absolute;
+  top: 10%;
+  height: 100%;
+  left: 10%;
+}
+
+.hero .frame .followers {
+  position: absolute;
+  width: 8rem;
+  right: 0%;
+  top: 5%;
+}
+
+.explore {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 20rem;
+  overflow-x: hidden;
+}
+
+.explore .program {
+  z-index: -1;
+  height: 20%;
+  max-width: 90%;
+  position: absolute;
+}
+
+.cards {
+  display: flex;
+  gap: 3%;
+  cursor: grab;
+}
+
+.card {
+  color: white;
+  display: flex;
+  min-height: 25vh;
+  min-width: 20rem;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2%;
+  align-items: flex-start;
+  background-color: #0d0d0d;
+  border-radius: 5px;
+}
+
+.cards .card:nth-child(2) {
+  background-color: #097fd9;
+}
+
+.card img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header .nav {
+    padding-bottom: 8rem;
+    position: absolute;
+    top: 9vh;
+    height: 92vh;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    right: 0px;
+    display: none;
+    z-index: 100;
+  }
+  .header .nav .nav-links {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .nav .nav-buttons {
+    flex-direction: column;
+  }
+
+  .header .burger {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .content {
+    align-items: flex-start;
+  }
+
+  .hero .frame {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-block: 10%;
+  }
+
+  .hero .frame .fitness {
+    position: relative;
+  }
+}
