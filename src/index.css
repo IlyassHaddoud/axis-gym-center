@@ -211,7 +211,7 @@ body.active {
 .card {
   color: white;
   display: flex;
-  min-height: 25vh;
+  min-height: 30vh;
   min-width: 20rem;
   flex-direction: column;
   justify-content: space-around;
@@ -228,6 +228,379 @@ body.active {
 .card img {
   width: 2rem;
   height: 2rem;
+}
+
+.plan {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-block: 6rem;
+  gap: 40px;
+}
+
+.plan .frames img {
+  max-width: 100%;
+}
+
+.plan .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan .content h1 {
+  font-size: clamp(1rem, 1vw + 2rem, 3rem);
+}
+
+.plan .content .list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan .content .list .li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan .content .btns {
+  display: flex;
+  gap: 10px;
+}
+
+.plan .content .btns button.join {
+  background-color: #097fd9;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.plan .content .btns button.contact {
+  background-color: #0d0d0d;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner {
+  color: white;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 20px;
+  border-radius: 5px;
+}
+
+.banner .text {
+  font-size: 20px;
+  max-width: 70%;
+}
+
+.banner button {
+  background-color: #097fd9;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.package {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.package .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.package .info .name {
+  color: #097fd9;
+}
+
+.package .info .price {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.package .info .tag {
+  color: #878787;
+}
+
+.package button {
+  background-color: #097fd9;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.package .features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.package .features .feature {
+  display: flex;
+  gap: 8px;
+}
+
+.pricing {
+  padding-block: 6rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.pricing .btns {
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pricing .btns button.montly {
+  background-color: #0d0d0d;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pricing .btns button.yearly {
+  background-color: white;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-block: 6px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pricing .packages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pricing .packages .package:nth-child(2) {
+  background-color: #097fd9;
+}
+
+.pricing .packages .package:nth-child(2) .info .name {
+  color: white;
+}
+
+.pricing .packages .package:nth-child(2) .info .tag {
+  color: white;
+}
+
+.pricing .packages .package:nth-child(2) button {
+  background-color: #0d0d0d;
+}
+
+.reviews {
+  color: white;
+  display: flex;
+  padding-block: 4rem;
+}
+
+.reviews .testimonial {
+  position: absolute;
+  z-index: -1;
+}
+
+.reviews .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.reviews .left h1 {
+  font-size: clamp(1.9rem, 1vw + 1rem, 3rem);
+}
+
+.reviews .right {
+  flex: 2;
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.review {
+  max-width: 90%;
+  background-color: #0d0d0d;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review .user {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.review .rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subscribe {
+  color: white;
+  background-color: #097fd9;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.subscribe .input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe .input input {
+  width: 400px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.subscribe .input button {
+  background-color: #0d0d0d;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-block: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+}
+
+.footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+}
+
+.footer .left .brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .right {
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
+  gap: 20px;
+}
+
+.footer .right .list {
+  list-style: none;
+}
+
+.footer .right .list p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer .list .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.copyright {
+  color: #878787;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  color: #878787;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyright .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -278,5 +651,69 @@ body.active {
 
   .hero .frame .fitness {
     position: relative;
+  }
+
+  .plan {
+    flex-direction: column;
+  }
+
+  .plan .frames {
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan .frames img {
+    max-width: 70%;
+  }
+
+  .plan .content {
+    max-width: 80%;
+    align-items: center;
+  }
+
+  .banner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+
+  .reviews .right {
+    justify-content: center;
+  }
+
+  .review {
+    max-width: 100%;
+  }
+
+  .reviews .left {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer .left {
+    min-width: 90%;
+    align-items: center;
+    background-color: #0d0d0d;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .footer .right {
+    min-width: 90%;
+  }
+
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
