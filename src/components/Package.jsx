@@ -9,7 +9,7 @@ const Package = ({ name, price, tag, features }) => {
         <div className="tag">{tag}</div>
         <div className="features">
           {features.map((feature) => (
-            <div className="feature">
+            <div className="feature" key={feature}>
               <img src={image} />
               <p>{feature}</p>
             </div>
